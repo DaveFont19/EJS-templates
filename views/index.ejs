@@ -1,48 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script type="module" src="./js/script.js" defer></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="header">
-
-
-    </header>
+  <head>
+    <%- include ('partials/head') %>
+    <title></title>
+  </head>
+  <body>
+    <%- include('partials/header') %>
     <main>
         <h1>Welcome to CSE Motors!</h1>
-        <hero class="hero">
-            <img src="./images/vehicles/delorean.jpg" alt="Delorean">
+        <section class="hero">
+            <img src="/images/vehicles/delorean.jpg" alt="Delorean">
             <div>
                 <h3>DMC Delorean</h3>
                 <p>3 Cup holders<br>
                     Superman doors<br>
                     Fuzzy dice!</p>
-                <a><img src="./images/site/own_today.png" alt="button"></a>
+                <a><img src="/images/site/own_today.png" alt="button"></a>
             </div>
-        </hero>
+        </section>
         <section class="list">
             <div class="delorean">
                 <h3><strong>Delorean Upgrades</strong></h3>
-                <figure><img src="./images/upgrades/flux-cap.png" alt="Flux Capacitor">
+                <figure><img src="/images/upgrades/flux-cap.png" alt="Flux Capacitor">
                     <figcaption> <a href="#">Flux Capacitor</a></figcaption>
                 </figure>
-                <figure><img src="./images/upgrades/flame.jpg" alt="Flame Decals">
+                <figure><img src="/images/upgrades/flame.jpg" alt="Flame Decals">
                     <figcaption> <a href="#">Flame Decals</a></figcaption>
                 </figure>
-                <figure><img src="./images/upgrades/bumper_sticker.jpg" alt="Bumper Stickers">
+                <figure><img src="/images/upgrades/bumper_sticker.jpg" alt="Bumper Stickers">
                     <figcaption> <a href="#">Bumper Stickers</a></figcaption>
                 </figure>
-                <figure><img src="./images/upgrades/hub-cap.jpg" alt="Hub Caps">
+                <figure><img src="/images/upgrades/hub-cap.jpg" alt="Hub Caps">
                     <figcaption> <a href="#">Hub Caps</a></figcaption>
                 </figure>
             </div>
@@ -58,9 +46,6 @@
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <%- include('partials/footer') %>
+  </body>
 </html>
