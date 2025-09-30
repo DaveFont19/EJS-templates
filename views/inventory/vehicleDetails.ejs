@@ -1,10 +1,8 @@
-<!-- The Content Heading -->
 <% if (title) { %>
-    <h1>
+    <title>
         <%= title %>
-    </h1>
+    </title>
     <% } else { res.redirect('/') } %>
-        <!-- A Message Block -->
 
         <head>
             <%- include ('../partials/head') %>
@@ -13,8 +11,8 @@
         <body>
             <%- include('../partials/header') %>
             <main>
-            <h1><%= title %></h1>
-            <%# messages() %>
+                <h1><%= title %></h1>
+                <%- hero %>
             </main>
             <%- include('../partials/footer') %>
         </body>

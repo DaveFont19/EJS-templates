@@ -109,6 +109,71 @@ footer {
   margin: 20px;
 }
 
+/* Inventory page */
+
+ul#inv-display {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+ul#inv-display li {
+  margin: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+  width: 40%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+ul#inv-display li>a {
+  width: 100%;
+  height: 70%;
+  border-bottom: solid 4px black;
+}
+
+ul#inv-display li a img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+ul#inv-display li div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+/* Vehicle dates page */
+section.vehicle-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+section.vehicle-details img {
+  width: 80%;
+}
+
+section.vehicle-details ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+section.vehicle-details ul li:nth-child(odd) {
+  background-color: #dfdfdf;
+}
+
+section.vehicle-details ul li:nth-child(even) {
+  background-color: white;
+}
+
 @media screen and (min-width: 710px) {
   body {
     background-image: url("/images/site/checkerboard.jpg");
@@ -161,5 +226,21 @@ footer {
 
   main section.list div.delorean figure img {
     width: 90%;
+  }
+
+  ul#inv-display {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Vehicle details */
+  section.vehicle-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 66%;
+    font-size: 30px;
+  }
+
+  section.vehicle-details ul li {
+    padding: 20px;
   }
 }

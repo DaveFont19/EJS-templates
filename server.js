@@ -43,7 +43,7 @@ app.use(async (err, req, res, next) => {
 })
 
 /* ************  Server info  ************ */
-const port = process.env.PORT || 5500
+const port = process.env.PORT || 10000
 const host = process.env.HOST || "localhost"
 
 /* ************  Start server  ************ */

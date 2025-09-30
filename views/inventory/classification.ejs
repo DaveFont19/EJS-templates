@@ -1,10 +1,22 @@
 <!-- The Content Heading -->
 <% if (title) { %>
-    <h1>
+    <title>
         <%= title %>
-    </h1>
+    </title>
     <% } else { res.redirect('/') } %>
-<!-- A Message Block -->
-<%# messages() %>
-<!-- The Inventory Items Display -->
-<%- grid %>
+
+        <head>
+            <%- include ('../partials/head') %>
+        </head>
+
+        <body>
+            <%- include('../partials/header') %>
+            <main>
+                    <!-- A Message Block -->
+                    <%# messages() %>
+                    <h1><%- title %></h1>
+                        <!-- The Inventory Items Display -->
+                        <%- grid %>
+            </main>
+            <%- include('../partials/footer') %>
+        </body>
