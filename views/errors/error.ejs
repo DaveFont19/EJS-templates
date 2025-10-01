@@ -1,20 +1,18 @@
 <!-- The Content Heading -->
 <% if (title) { %>
-    <h1>
-        <%= title %>
-    </h1>
-    <% } else { res.redirect('/') } %>
-        <!-- A Message Block -->
-
         <head>
             <%- include ('../partials/head') %>
         </head>
 
         <body>
             <%- include('../partials/header') %>
-            <main>
+            <main class="error-main">
             <h1><%= title %></h1>
-            <%# messages() %>
+            
+            <h2>Sorry, we appear to have lost that page.</h2>
             </main>
             <%- include('../partials/footer') %>
         </body>
+    <% } else { res.redirect('/') } %>
+        <!-- A Message Block -->
+         <%# messages() %>

@@ -174,9 +174,24 @@ section.vehicle-details ul li:nth-child(even) {
   background-color: white;
 }
 
+/* Error page */
+main.error-main {
+  background-image:linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)), url("/images/site/error-page.jpg");
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
 @media screen and (min-width: 710px) {
   body {
     background-image: url("/images/site/checkerboard.jpg");
+
   }
 
   header {
@@ -242,5 +257,9 @@ section.vehicle-details ul li:nth-child(even) {
 
   section.vehicle-details ul li {
     padding: 20px;
+  }
+  /* Error page */
+  main.error-main{
+    font-size: 50px;
   }
 }
