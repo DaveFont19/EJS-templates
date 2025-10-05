@@ -8,6 +8,7 @@
             <%- include('../partials/header') %>
             <main class="error-main">
             <h1><%= title %></h1>
+            <%# messages() %>
             
             <h2>Sorry, we appear to have lost that page.</h2>
             </main>
@@ -15,4 +16,3 @@
         </body>
     <% } else { res.redirect('/') } %>
         <!-- A Message Block -->
-         <%# messages() %>

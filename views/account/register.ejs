@@ -1,0 +1,33 @@
+<head>
+    <%- include ('../partials/head') %>
+        <title>
+            <%= title %>
+        </title>
+</head>
+
+<body class="form-login">
+    <%- include('../partials/header') %>
+        <main>
+            <h1>
+                <%= title %>
+            </h1>
+            <%# messages() %>
+                <div>
+                    <form action="/account/register" method="post">
+                        <label for="account_firstname">First name</label>
+                        <input required type="text" name="account_firstname" id="account_firstname">
+
+                        <label for="account_lastname">Last name</label>
+                        <input required type="text" name="account_lastname" id="account_lastname">
+
+                        <label for="account_email">Email address</label>
+                        <input required type="email" name="account_email" id="account_email">
+
+                        <label for="account_password">Password</label>
+                        <input required type="password" name="account_password" id="account_password">
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+        </main>
+        <%- include('../partials/footer') %>
+</body>

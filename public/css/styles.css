@@ -176,7 +176,7 @@ section.vehicle-details ul li:nth-child(even) {
 
 /* Error page */
 main.error-main {
-  background-image:linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)), url("/images/site/error-page.jpg");
+  background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)), url("/images/site/error-page.jpg");
   height: 80%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,6 +186,34 @@ main.error-main {
   justify-content: center;
   align-items: center;
   font-size: 30px;
+}
+
+/* Login Page */
+body.form-login main {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+body.form-login main h1 {
+  align-self: flex-start;
+}
+
+body.form-login main div {
+  background-color: rgb(50, 71, 92);
+  color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+}
+
+body.form-login main div form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+body.form-login main div form input{
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 710px) {
@@ -258,8 +286,9 @@ main.error-main {
   section.vehicle-details ul li {
     padding: 20px;
   }
+
   /* Error page */
-  main.error-main{
+  main.error-main {
     font-size: 50px;
   }
 }
