@@ -211,9 +211,74 @@ body.form-login main div form {
   flex-direction: column;
   margin-bottom: 15px;
 }
-body.form-login main div form input{
+
+body.form-login main div form input {
   margin-bottom: 15px;
   border-radius: 5px;
+}
+
+/* Registration page  */
+input:required:invalid,
+input:focus:invalid {
+  background-image: url(/images/invalid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+input:required:valid {
+  background-image: url(/images/valid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+/* Add-Classiication page */
+.inv-wrap {
+  max-width: 700px;
+  margin: 1.5rem auto;
+}
+
+.page-error {
+  color: #c00;
+  margin: .5rem 0 1rem;
+  font-weight: 600;
+}
+
+.panel {
+  background: #19a7c1;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  color: black;
+}
+
+.hint {
+  margin: 0 0 .25rem;
+}
+
+.subhint {
+  margin: .25rem 0 .5rem;
+  font-size: .9rem;
+  opacity: .9;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin: .25rem 0 .5rem;
+}
+
+.field-error {
+  background: #fff;
+  color: #c00;
+  padding: .35rem .5rem;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: .5rem .9rem;
+  border: 0;
+  border-radius: 6px;
+  background: #fff;
 }
 
 @media screen and (min-width: 710px) {
